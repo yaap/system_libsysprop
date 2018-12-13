@@ -166,6 +166,238 @@ props {
     prop_name: "persist.radio.airplane_mode_on"
     integer_as_bool: true
   }
+  prop {
+    api_name: "baseband_version"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.version.baseband"
+  }
+  prop {
+    api_name: "call_ring_delay"
+    type: Integer
+    scope: Internal
+    prop_name: "ro.telephony.call_ring.delay"
+  }
+  prop {
+    api_name: "cdma_msg_id"
+    type: Integer
+    access: ReadWrite
+    scope: Internal
+    prop_name: "persist.radio.cdma.msgid"
+  }
+  prop {
+    api_name: "current_active_phone"
+    type: IntegerList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.current.phone-type"
+  }
+  prop {
+    api_name: "data_network_type"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.network.type"
+  }
+  prop {
+    api_name: "data_roaming"
+    scope: Internal
+    prop_name: "ro.com.android.dataroaming"
+  }
+  prop {
+    api_name: "default_network"
+    type: IntegerList
+    scope: Internal
+    prop_name: "ro.telephony.default_network"
+  }
+  prop {
+    api_name: "disable_call"
+    scope: Internal
+    prop_name: "ro.telephony.disable-call"
+  }
+  prop {
+    api_name: "ecm_exit_timer"
+    type: Long
+    scope: Internal
+    prop_name: "ro.cdma.ecmexittimer"
+  }
+  prop {
+    api_name: "enable_esim_ui_by_default"
+    scope: Internal
+    prop_name: "esim.enable_esim_system_ui_by_default"
+  }
+  prop {
+    api_name: "icc_operator_alpha"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.sim.operator.alpha"
+  }
+  prop {
+    api_name: "icc_operator_iso_country"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.sim.operator.iso-country"
+  }
+  prop {
+    api_name: "icc_operator_numeric"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.sim.operator.numeric"
+  }
+  prop {
+    api_name: "ignore_nitz"
+    scope: Internal
+    prop_name: "telephony.test.ignore.nitz"
+  }
+  prop {
+    api_name: "in_ecm_mode"
+    access: ReadWrite
+    scope: Internal
+    prop_name: "ril.cdma.inecmmode"
+  }
+  prop {
+    api_name: "lte_on_cdma_device"
+    type: Integer
+    scope: Internal
+    prop_name: "telephony.lteOnCdmaDevice"
+  }
+  prop {
+    api_name: "lte_on_cdma_product_type"
+    type: String
+    scope: Internal
+    prop_name: "telephony.lteOnCdmaProductType"
+  }
+  prop {
+    api_name: "max_active_modems"
+    type: Integer
+    scope: Internal
+    prop_name: "ro.telephony.max.active.modems"
+  }
+  prop {
+    api_name: "mobile_data"
+    scope: Internal
+    prop_name: "ro.com.android.mobiledata"
+  }
+  prop {
+    api_name: "multi_sim_config"
+    type: String
+    access: ReadWrite
+    scope: Internal
+    prop_name: "persist.radio.multisim.config"
+  }
+  prop {
+    api_name: "operator_alpha"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.operator.alpha"
+  }
+  prop {
+    api_name: "operator_idp_string"
+    type: String
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.operator.idpstring"
+  }
+  prop {
+    api_name: "operator_is_manual"
+    scope: Internal
+    prop_name: "operator.ismanual"
+  }
+  prop {
+    api_name: "operator_is_roaming"
+    type: BooleanList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.operator.isroaming"
+  }
+  prop {
+    api_name: "operator_iso_country"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.operator.iso-country"
+  }
+  prop {
+    api_name: "operator_numeric"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.operator.numeric"
+  }
+  prop {
+    api_name: "otasp_num_schema"
+    type: StringList
+    scope: Internal
+    prop_name: "ro.cdma.otaspnumschema"
+  }
+  prop {
+    api_name: "reboot_on_modem_change"
+    scope: Internal
+    prop_name: "persist.radio.reboot_on_modem_change"
+  }
+  prop {
+    api_name: "reset_on_radio_tech_change"
+    scope: Internal
+    prop_name: "persist.radio.reset_on_switch"
+  }
+  prop {
+    api_name: "ril_impl"
+    type: String
+    scope: Internal
+    prop_name: "gsm.version.ril-impl"
+  }
+  prop {
+    api_name: "ril_sends_multiple_call_ring"
+    scope: Internal
+    prop_name: "ro.telephony.call_ring.multiple"
+  }
+  prop {
+    api_name: "sim_state"
+    type: StringList
+    access: ReadWrite
+    scope: Internal
+    prop_name: "gsm.sim.state"
+  }
+  prop {
+    api_name: "sms_receive"
+    type: BooleanList
+    scope: Internal
+    prop_name: "telephony.sms.receive"
+  }
+  prop {
+    api_name: "sms_send"
+    type: BooleanList
+    scope: Internal
+    prop_name: "telephony.sms.send"
+  }
+  prop {
+    api_name: "test_csim"
+    scope: Internal
+    prop_name: "persist.radio.test-csim"
+  }
+  prop {
+    api_name: "videocall_audio_output"
+    type: Integer
+    scope: Internal
+    prop_name: "persist.radio.call.audio.output"
+  }
+  prop {
+    api_name: "wake_lock_timeout"
+    type: Integer
+    scope: Internal
+    prop_name: "ro.ril.wake_lock_timeout"
+  }
+  prop {
+    api_name: "wps_info"
+    type: Integer
+    scope: Internal
+    prop_name: "wifidirect.wps"
+  }
 }
 props {
   module: "android.sysprop.TraceProperties"
