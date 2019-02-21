@@ -18,8 +18,19 @@ module: "android.sysprop.CryptoProperties"
 # Encryption type
 prop {
     api_name: "type"
-    type: String
+    type: Enum
     scope: Internal
     access: Writeonce
+    enum_values: "block|file|none"
     prop_name: "ro.crypto.type"
+}
+
+# Encryption state
+prop {
+    api_name: "state"
+    type: Enum
+    scope: Internal
+    access: Readonly
+    enum_values: "encrypted|unencrypted|unsupported"
+    prop_name: "ro.crypto.state"
 }
