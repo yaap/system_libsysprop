@@ -22,3 +22,11 @@ prop {
     access: ReadWrite
     prop_name: "android.car.systemuser.headless"
 }
+
+prop {
+    api_name: "boot_user_override_id"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    prop_name: "android.car.systemuser.bootuseroverrideid"
+}
