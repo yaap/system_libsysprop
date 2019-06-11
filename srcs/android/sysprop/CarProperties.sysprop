@@ -30,3 +30,13 @@ prop {
     access: ReadWrite
     prop_name: "android.car.systemuser.bootuseroverrideid"
 }
+
+# String to be prefixed to device name during trusted device enrollment.
+# Max length limit is 4. Chars exceeding length limit will be truncated.
+prop {
+    api_name: "trusted_device_device_name_prefix"
+    type: String
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.android.car.trusteddevice.device_name_prefix"
+}
