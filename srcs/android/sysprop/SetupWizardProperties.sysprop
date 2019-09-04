@@ -12,31 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+module: "android.sysprop.SetupWizardProperties"
 owner: Platform
-module: "android.sysprop.CarProperties"
-
 prop {
-    api_name: "headless_system_user"
-    type: Boolean
-    scope: Internal
-    access: ReadWrite
-    prop_name: "android.car.systemuser.headless"
-}
-
-prop {
-    api_name: "boot_user_override_id"
-    type: Integer
-    scope: Internal
-    access: ReadWrite
-    prop_name: "android.car.systemuser.bootuseroverrideid"
-}
-
-# String to be prefixed to device name during trusted device enrollment.
-# Max length limit is 4. Chars exceeding length limit will be truncated.
-prop {
-    api_name: "trusted_device_device_name_prefix"
+    api_name: "theme"
     type: String
     scope: Internal
+    access: ReadWrite
+    prop_name: "setupwizard.theme"
+}
+
+# CIDs of devices which should not show anything related to eSIM.
+prop {
+    api_name: "esim_cid_ignore"
+    type: StringList
+    scope: Internal
     access: Readonly
-    prop_name: "ro.android.car.trusteddevice.device_name_prefix"
+    prop_name: "ro.setupwizard.esim_cid_ignore"
 }
