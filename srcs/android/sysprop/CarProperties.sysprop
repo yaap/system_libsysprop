@@ -40,3 +40,21 @@ prop {
     access: Readonly
     prop_name: "ro.android.car.trusteddevice.device_name_prefix"
 }
+
+# Number of warm users pre-created during boot
+prop {
+    api_name: "number_pre_created_users"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    prop_name: "android.car.number_pre_created_users"
+}
+
+# Number of warm guest users pre-created during boot
+prop {
+    api_name: "number_pre_created_guests"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    prop_name: "android.car.number_pre_created_guests"
+}
