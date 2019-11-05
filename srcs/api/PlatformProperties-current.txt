@@ -144,6 +144,16 @@ props {
   }
 }
 props {
+  module: "android.sysprop.TelephonyProperties"
+  prop {
+    api_name: "airplane_mode_on"
+    access: ReadWrite
+    scope: Internal
+    prop_name: "persist.radio.airplane_mode_on"
+    integer_as_bool: true
+  }
+}
+props {
   module: "android.sysprop.TraceProperties"
   prop {
     api_name: "enable"
