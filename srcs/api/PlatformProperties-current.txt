@@ -134,6 +134,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.OtaProperties"
+  prop {
+    api_name: "warm_reset"
+    access: ReadWrite
+    prop_name: "ota.warm_reset"
+    integer_as_bool: true
+  }
+}
+props {
   module: "android.sysprop.ProductProperties"
   prop {
     api_name: "unbundled_apps"
