@@ -449,3 +449,16 @@ props {
     prop_name: "vold.encrypt_time_remaining"
   }
 }
+props {
+  module: "android.sysprop.WifiProperties"
+  prop {
+    api_name: "start_supplicant"
+    access: Writeonce
+    prop_name: "ctl.start$supplicant"
+  }
+  prop {
+    api_name: "stop_supplicant"
+    access: Writeonce
+    prop_name: "ctl.stop$supplicant"
+  }
+}
