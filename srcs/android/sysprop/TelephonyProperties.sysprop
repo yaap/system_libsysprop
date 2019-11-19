@@ -116,7 +116,7 @@ prop {
 prop {
     api_name: "operator_iso_country"
     type: StringList
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "gsm.operator.iso-country"
 }
@@ -217,7 +217,7 @@ prop {
 prop {
     api_name: "in_ecm_mode"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "ril.cdma.inecmmode"
 }
@@ -226,7 +226,7 @@ prop {
 prop {
     api_name: "ecm_exit_timer"
     type: Long
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "ro.cdma.ecmexittimer"
 }
@@ -235,7 +235,7 @@ prop {
 prop {
     api_name: "operator_idp_string"
     type: String
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "gsm.operator.idpstring"
 }
@@ -254,7 +254,7 @@ prop {
 prop {
     api_name: "disable_call"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "ro.telephony.disable-call"
 }
@@ -263,7 +263,7 @@ prop {
 prop {
     api_name: "ril_sends_multiple_call_ring"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "ro.telephony.call_ring.multiple"
 }
@@ -272,7 +272,7 @@ prop {
 prop {
     api_name: "call_ring_delay"
     type: Integer
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "ro.telephony.call_ring.delay"
 }
@@ -293,7 +293,7 @@ prop {
 prop {
     api_name: "wake_lock_timeout"
     type: Integer
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "ro.ril.wake_lock_timeout"
 }
@@ -305,7 +305,7 @@ prop {
 prop {
     api_name: "reset_on_radio_tech_change"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "persist.radio.reset_on_switch"
 }
@@ -344,7 +344,7 @@ prop {
 prop {
     api_name: "test_csim"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "persist.radio.test-csim"
 }
@@ -355,7 +355,7 @@ prop {
 prop {
     api_name: "ignore_nitz"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "telephony.test.ignore.nitz"
 }
@@ -366,7 +366,7 @@ prop {
 prop {
     api_name: "multi_sim_config"
     type: String
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "persist.radio.multisim.config"
 }
@@ -428,7 +428,7 @@ prop {
 prop {
     api_name: "mobile_data"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: Readonly
     prop_name: "ro.com.android.mobiledata"
 }
