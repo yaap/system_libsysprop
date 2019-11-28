@@ -134,6 +134,24 @@ props {
   }
 }
 props {
+  module: "android.sysprop.MediaProperties"
+  prop {
+    api_name: "swcodec_ion_align"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.align"
+  }
+  prop {
+    api_name: "swcodec_ion_flags"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.flags"
+  }
+  prop {
+    api_name: "swcodec_ion_heapmask"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.heapmask"
+  }
+}
+props {
   module: "android.sysprop.OtaProperties"
   prop {
     api_name: "warm_reset"
