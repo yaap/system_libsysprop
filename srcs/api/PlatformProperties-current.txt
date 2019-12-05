@@ -8,6 +8,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.ApkVerityProperties"
+  prop {
+    api_name: "apk_verity_mode"
+    type: Integer
+    access: Writeonce
+    prop_name: "ro.apk_verity.mode"
+  }
+}
+props {
   module: "android.sysprop.CarProperties"
   prop {
     api_name: "boot_user_override_id"
