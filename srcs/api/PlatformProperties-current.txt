@@ -212,7 +212,6 @@ props {
   prop {
     api_name: "call_ring_delay"
     type: Integer
-    scope: Internal
     prop_name: "ro.telephony.call_ring.delay"
   }
   prop {
@@ -249,13 +248,11 @@ props {
   }
   prop {
     api_name: "disable_call"
-    scope: Internal
     prop_name: "ro.telephony.disable-call"
   }
   prop {
     api_name: "ecm_exit_timer"
     type: Long
-    scope: Internal
     prop_name: "ro.cdma.ecmexittimer"
   }
   prop {
@@ -286,13 +283,11 @@ props {
   }
   prop {
     api_name: "ignore_nitz"
-    scope: Internal
     prop_name: "telephony.test.ignore.nitz"
   }
   prop {
     api_name: "in_ecm_mode"
     access: ReadWrite
-    scope: Internal
     prop_name: "ril.cdma.inecmmode"
   }
   prop {
@@ -315,14 +310,12 @@ props {
   }
   prop {
     api_name: "mobile_data"
-    scope: Internal
     prop_name: "ro.com.android.mobiledata"
   }
   prop {
     api_name: "multi_sim_config"
     type: String
     access: ReadWrite
-    scope: Internal
     prop_name: "persist.radio.multisim.config"
   }
   prop {
@@ -336,7 +329,6 @@ props {
     api_name: "operator_idp_string"
     type: String
     access: ReadWrite
-    scope: Internal
     prop_name: "gsm.operator.idpstring"
   }
   prop {
@@ -355,7 +347,6 @@ props {
     api_name: "operator_iso_country"
     type: StringList
     access: ReadWrite
-    scope: Internal
     prop_name: "gsm.operator.iso-country"
   }
   prop {
@@ -378,7 +369,6 @@ props {
   }
   prop {
     api_name: "reset_on_radio_tech_change"
-    scope: Internal
     prop_name: "persist.radio.reset_on_switch"
   }
   prop {
@@ -389,7 +379,6 @@ props {
   }
   prop {
     api_name: "ril_sends_multiple_call_ring"
-    scope: Internal
     prop_name: "ro.telephony.call_ring.multiple"
   }
   prop {
@@ -413,7 +402,6 @@ props {
   }
   prop {
     api_name: "test_csim"
-    scope: Internal
     prop_name: "persist.radio.test-csim"
   }
   prop {
@@ -425,7 +413,6 @@ props {
   prop {
     api_name: "wake_lock_timeout"
     type: Integer
-    scope: Internal
     prop_name: "ro.ril.wake_lock_timeout"
   }
   prop {
