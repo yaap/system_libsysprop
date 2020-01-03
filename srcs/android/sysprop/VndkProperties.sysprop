@@ -12,12 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-module: "android.sysprop.ProductProperties"
+module: "android.sysprop.VndkProperties"
 owner: Platform
+
+# VNDK version for vendor partition
 prop {
-    api_name: "unbundled_apps"
-    type: Boolean
-    scope: Internal
+    api_name: "vendor_vndk_version"
+    type: String
+    scope: Public
     access: Readonly
-    prop_name: "ro.product.apps.unbundled"
+    prop_name: "ro.vndk.version"
+}
+
+# VNDK version for product partition
+prop {
+    api_name: "product_vndk_version"
+    type: String
+    scope: Public
+    access: Readonly
+    prop_name: "ro.product.vndk.version"
 }
