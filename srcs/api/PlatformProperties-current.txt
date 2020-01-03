@@ -170,14 +170,6 @@ props {
   }
 }
 props {
-  module: "android.sysprop.ProductProperties"
-  prop {
-    api_name: "unbundled_apps"
-    scope: Internal
-    prop_name: "ro.product.apps.unbundled"
-  }
-}
-props {
   module: "android.sysprop.SetupWizardProperties"
   prop {
     api_name: "esim_cid_ignore"
@@ -437,6 +429,19 @@ props {
     scope: Internal
     prop_name: "debug.atrace.user_initiated"
     integer_as_bool: true
+  }
+}
+props {
+  module: "android.sysprop.VndkProperties"
+  prop {
+    api_name: "product_vndk_version"
+    type: String
+    prop_name: "ro.product.vndk.version"
+  }
+  prop {
+    api_name: "vendor_vndk_version"
+    type: String
+    prop_name: "ro.vndk.version"
   }
 }
 props {
