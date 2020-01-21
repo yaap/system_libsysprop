@@ -124,6 +124,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.PowerProperties"
+  prop {
+    api_name: "fixed_performance_scale_factor"
+    type: Integer
+    prop_name: "ro.power.fixed_performance_scale_factor"
+  }
+}
+props {
   module: "android.sysprop.SetupWizardProperties"
   prop {
     api_name: "esim_cid_ignore"
