@@ -27,9 +27,48 @@ prop {
 
 # Set this to true to enable 'Set Menu Language' CEC feature.
 prop {
-    api_name: "set_menu_language"
+    api_name: "set_menu_language_enabled"
     type: Boolean
     scope: Internal
     access: Readonly
-    prop_name: "ro.hdmi.set_menu_language"
+    prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
+}
+
+# When ARC is initiated, this port will be used to turn on ARC.
+prop {
+    api_name: "arc_port"
+    type: String
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.hdmi.cec.audio.arc_port.config"
+}
+
+# True means enabling muting logic.
+# False means never mute device.
+prop {
+    api_name: "system_audio_mode_muting"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.hdmi.cec.audio.system_audio_mode_muting.enabled"
+}
+
+# True means CEC audio device should forward volume keys when system audio mode is off.
+# Default is false.
+prop {
+    api_name: "forward_volume_keys_when_system_audio_mode_off"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.hdmi.cec.audio.forward_volume_keys_when_system_audio_mode_off.enabled"
+}
+
+# True means the current device is a cec switch device.
+# Default is false.
+prop {
+    api_name: "is_switch"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.hdmi.cec.source.is_switch.enabled."
 }

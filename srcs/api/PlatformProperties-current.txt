@@ -138,15 +138,36 @@ props {
 props {
   module: "android.sysprop.HdmiProperties"
   prop {
+    api_name: "arc_port"
+    type: String
+    scope: Internal
+    prop_name: "ro.hdmi.cec.audio.arc_port.config"
+  }
+  prop {
     api_name: "device_type"
     type: IntegerList
     scope: Internal
     prop_name: "ro.hdmi.device_type"
   }
   prop {
-    api_name: "set_menu_language"
+    api_name: "forward_volume_keys_when_system_audio_mode_off"
     scope: Internal
-    prop_name: "ro.hdmi.set_menu_language"
+    prop_name: "ro.hdmi.cec.audio.forward_volume_keys_when_system_audio_mode_off.enabled"
+  }
+  prop {
+    api_name: "is_switch"
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.is_switch.enabled."
+  }
+  prop {
+    api_name: "set_menu_language_enabled"
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
+  }
+  prop {
+    api_name: "system_audio_mode_muting"
+    scope: Internal
+    prop_name: "ro.hdmi.cec.audio.system_audio_mode_muting.enabled"
   }
 }
 props {
