@@ -129,6 +129,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.HdmiProperties"
+  prop {
+    api_name: "device_type"
+    type: IntegerList
+    scope: Internal
+    prop_name: "ro.hdmi.device_type"
+  }
+}
+props {
   module: "android.sysprop.OtaProperties"
   prop {
     api_name: "warm_reset"
