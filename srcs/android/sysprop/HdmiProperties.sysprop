@@ -24,3 +24,12 @@ prop {
     access: Readonly
     prop_name: "ro.hdmi.device_type"
 }
+
+# Set this to true to enable 'Set Menu Language' CEC feature.
+prop {
+    api_name: "set_menu_language"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.hdmi.set_menu_language"
+}
