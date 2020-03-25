@@ -136,6 +136,11 @@ props {
     scope: Internal
     prop_name: "ro.hdmi.device_type"
   }
+  prop {
+    api_name: "set_menu_language"
+    scope: Internal
+    prop_name: "ro.hdmi.set_menu_language"
+  }
 }
 props {
   module: "android.sysprop.OtaProperties"
