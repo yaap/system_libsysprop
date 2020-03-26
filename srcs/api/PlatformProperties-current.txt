@@ -389,6 +389,11 @@ props {
     prop_name: "ro.telephony.call_ring.multiple"
   }
   prop {
+    api_name: "sim_slots_count"
+    type: Integer
+    prop_name: "ro.telephony.sim_slots.count"
+  }
+  prop {
     api_name: "sim_state"
     type: StringList
     access: ReadWrite
