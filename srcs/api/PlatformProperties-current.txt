@@ -137,10 +137,18 @@ props {
     prop_name: "ro.hdmi.cec.audio.arc_port.config"
   }
   prop {
+    api_name: "cec_device_types"
+    type: EnumList
+    scope: Internal
+    prop_name: "ro.hdmi.cec_device_types"
+    enum_values: "tv|recording_device|reserved|tuner|playback_device|audio_system|pure_cec_switch|video_processor"
+  }
+  prop {
     api_name: "device_type"
     type: IntegerList
     scope: Internal
     prop_name: "ro.hdmi.device_type"
+    deprecated: true
   }
   prop {
     api_name: "forward_volume_keys_when_system_audio_mode_off"
