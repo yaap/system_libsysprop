@@ -23,6 +23,18 @@ prop {
     scope: Internal
     access: Readonly
     prop_name: "ro.hdmi.device_type"
+    deprecated: true
+}
+
+# The HDMI CEC device types supported by this device
+# See HDMI CEC 1.4b Supplement 1 CEC Table 29 Operand Descriptions.
+prop {
+    api_name: "cec_device_types"
+    type: EnumList
+    scope: Internal
+    access: Readonly
+    prop_name: "ro.hdmi.cec_device_types"
+    enum_values: "tv|recording_device|reserved|tuner|playback_device|audio_system|pure_cec_switch|video_processor"
 }
 
 # Set this to true to enable 'Set Menu Language' CEC feature.
