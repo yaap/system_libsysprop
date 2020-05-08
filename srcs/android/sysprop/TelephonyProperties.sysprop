@@ -449,9 +449,9 @@ prop {
 prop {
     api_name: "max_active_modems"
     type: Integer
-    scope: Internal
+    scope: Public
     access: Readonly
-    prop_name: "ro.telephony.max.active.modems"
+    prop_name: "telephony.active_modems.max_count"
 }
 
 #
