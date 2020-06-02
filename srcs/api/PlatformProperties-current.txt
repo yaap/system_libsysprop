@@ -167,6 +167,13 @@ props {
     enum_values: "none|wake_up_only|wake_up_and_send_active_source"
   }
   prop {
+    api_name: "power_state_change_on_active_source_lost"
+    type: Enum
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.power_state_change_on_active_source_lost"
+    enum_values: "none|standby_now"
+  }
+  prop {
     api_name: "set_menu_language_enabled"
     scope: Internal
     prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
