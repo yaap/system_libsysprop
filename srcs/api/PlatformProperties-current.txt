@@ -138,10 +138,18 @@ props {
 props {
   module: "android.sysprop.HdmiProperties"
   prop {
+    api_name: "cec_device_types"
+    type: EnumList
+    scope: Internal
+    prop_name: "ro.hdmi.cec_device_types"
+    enum_values: "tv|recording_device|reserved|tuner|playback_device|audio_system|pure_cec_switch|video_processor"
+  }
+  prop {
     api_name: "device_type"
     type: IntegerList
     scope: Internal
     prop_name: "ro.hdmi.device_type"
+    deprecated: true
   }
   prop {
     api_name: "set_menu_language"
