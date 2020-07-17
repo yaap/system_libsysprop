@@ -113,3 +113,18 @@ prop {
     enum_values: "none|standby_now"
     prop_name: "ro.hdmi.cec.source.power_state_change_on_active_source_lost"
 }
+
+# Property to decide which devices the playback device can send a <Standby> message to upon going to sleep.
+# <ul>
+# <li><b>to_tv</b> to the TV only (default).
+# <li><b>broadcast</b> to all devices in the network.
+# <li><b>none</b> no <Standby> message sent.
+# </ul>
+prop {
+    api_name: "send_standby_on_sleep"
+    type: Enum
+    scope: Internal
+    access: Readonly
+    enum_values: "to_tv|broadcast|none"
+    prop_name: "ro.hdmi.cec.source.send_standby_on_sleep"
+}
