@@ -182,6 +182,13 @@ props {
     enum_values: "none|standby_now"
   }
   prop {
+    api_name: "send_standby_on_sleep"
+    type: Enum
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.send_standby_on_sleep"
+    enum_values: "to_tv|broadcast|none"
+  }
+  prop {
     api_name: "set_menu_language_enabled"
     scope: Internal
     prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
