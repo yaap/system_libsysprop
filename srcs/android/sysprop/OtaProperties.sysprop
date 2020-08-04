@@ -22,3 +22,11 @@ prop {
     prop_name: "ota.warm_reset"
     integer_as_bool : true
 }
+
+prop {
+    api_name: "ab_ota_partitions"
+    type: String
+    scope: Public
+    access: Readonly
+    prop_name: "ro.product.ab_ota_partitions"
+}
