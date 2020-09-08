@@ -17,12 +17,6 @@ props {
     prop_name: "android.car.systemuser.bootuseroverrideid"
   }
   prop {
-    api_name: "headless_system_user"
-    access: ReadWrite
-    scope: Internal
-    prop_name: "android.car.systemuser.headless"
-  }
-  prop {
     api_name: "trusted_device_device_name_prefix"
     type: String
     scope: Internal

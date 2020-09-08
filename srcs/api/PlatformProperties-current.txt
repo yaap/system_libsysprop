@@ -26,12 +26,6 @@ props {
     prop_name: "android.car.systemuser.bootuseroverrideid"
   }
   prop {
-    api_name: "headless_system_user"
-    access: ReadWrite
-    scope: Internal
-    prop_name: "android.car.systemuser.headless"
-  }
-  prop {
     api_name: "number_pre_created_guests"
     type: Integer
     access: ReadWrite
@@ -50,6 +44,19 @@ props {
     type: String
     scope: Internal
     prop_name: "ro.android.car.trusteddevice.device_name_prefix"
+  }
+  prop {
+    api_name: "user_hal_enabled"
+    access: ReadWrite
+    scope: Internal
+    prop_name: "android.car.user_hal_enabled"
+  }
+  prop {
+    api_name: "user_hal_timeout"
+    type: Integer
+    access: ReadWrite
+    scope: Internal
+    prop_name: "android.car.user_hal_timeout"
   }
 }
 props {
@@ -131,12 +138,6 @@ props {
 props {
   module: "android.sysprop.HdmiProperties"
   prop {
-    api_name: "arc_port"
-    type: String
-    scope: Internal
-    prop_name: "ro.hdmi.cec.audio.arc_port.config"
-  }
-  prop {
     api_name: "cec_device_types"
     type: EnumList
     scope: Internal
@@ -151,24 +152,27 @@ props {
     deprecated: true
   }
   prop {
-    api_name: "forward_volume_keys_when_system_audio_mode_off"
+    api_name: "set_menu_language"
     scope: Internal
-    prop_name: "ro.hdmi.cec.audio.forward_volume_keys_when_system_audio_mode_off.enabled"
+    prop_name: "ro.hdmi.set_menu_language"
+  }
+}
+props {
+  module: "android.sysprop.MediaProperties"
+  prop {
+    api_name: "swcodec_ion_align"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.align"
   }
   prop {
-    api_name: "is_switch"
-    scope: Internal
-    prop_name: "ro.hdmi.cec.source.is_switch.enabled."
+    api_name: "swcodec_ion_flags"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.flags"
   }
   prop {
-    api_name: "set_menu_language_enabled"
-    scope: Internal
-    prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
-  }
-  prop {
-    api_name: "system_audio_mode_muting"
-    scope: Internal
-    prop_name: "ro.hdmi.cec.audio.system_audio_mode_muting.enabled"
+    api_name: "swcodec_ion_heapmask"
+    type: Integer
+    prop_name: "ro.com.android.media.swcodec.ion.heapmask"
   }
 }
 props {
@@ -494,5 +498,18 @@ props {
     access: ReadWrite
     scope: Internal
     prop_name: "vold.encrypt_time_remaining"
+  }
+}
+props {
+  module: "android.sysprop.WifiProperties"
+  prop {
+    api_name: "start_supplicant"
+    access: Writeonce
+    prop_name: "ctl.start$supplicant"
+  }
+  prop {
+    api_name: "stop_supplicant"
+    access: Writeonce
+    prop_name: "ctl.stop$supplicant"
   }
 }
