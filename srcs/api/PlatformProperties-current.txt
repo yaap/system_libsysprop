@@ -219,6 +219,14 @@ props {
     prop_name: "ro.product.ab_ota_partitions"
   }
   prop {
+    api_name: "virtual_ab_enabled"
+    prop_name: "ro.virtual_ab.enabled"
+  }
+  prop {
+    api_name: "virtual_ab_retrofit"
+    prop_name: "ro.virtual_ab.retrofit"
+  }
+  prop {
     api_name: "warm_reset"
     access: ReadWrite
     prop_name: "ota.warm_reset"
