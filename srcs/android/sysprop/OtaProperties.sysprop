@@ -30,3 +30,19 @@ prop {
     access: Readonly
     prop_name: "ro.product.ab_ota_partitions"
 }
+
+prop {
+    api_name: "virtual_ab_enabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "ro.virtual_ab.enabled",
+}
+
+prop {
+    api_name: "virtual_ab_retrofit"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "ro.virtual_ab.retrofit",
+}
