@@ -499,13 +499,6 @@ props {
 props {
   module: "android.sysprop.TraceProperties"
   prop {
-    api_name: "enable"
-    access: ReadWrite
-    scope: Internal
-    prop_name: "persist.traced.enable"
-    integer_as_bool: true
-  }
-  prop {
     api_name: "user_initiated"
     access: ReadWrite
     scope: Internal
