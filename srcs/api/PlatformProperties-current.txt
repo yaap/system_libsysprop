@@ -26,6 +26,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.NetworkProperties"
+  prop {
+    api_name: "tcp_init_rwnd"
+    type: Integer
+    access: ReadWrite
+    prop_name: "net.tcp_def_init_rwnd"
+  }
+}
+props {
   module: "android.sysprop.OtaProperties"
   prop {
     api_name: "ab_ota_partitions"
