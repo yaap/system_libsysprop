@@ -55,16 +55,6 @@ prop {
     prop_name: "ro.hdmi.cec.audio.arc_port.config"
 }
 
-# True means enabling muting logic.
-# False means never mute device.
-prop {
-    api_name: "system_audio_mode_muting"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "ro.hdmi.cec.audio.system_audio_mode_muting.enabled"
-}
-
 # True means CEC audio device should forward volume keys when system audio mode is off.
 # Default is false.
 prop {
