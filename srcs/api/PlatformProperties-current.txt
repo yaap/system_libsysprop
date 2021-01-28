@@ -65,6 +65,19 @@ props {
   }
 }
 props {
+  module: "android.sysprop.SocProperties"
+  prop {
+    api_name: "soc_manufacturer"
+    type: String
+    prop_name: "ro.soc.manufacturer"
+  }
+  prop {
+    api_name: "soc_model"
+    type: String
+    prop_name: "ro.soc.model"
+  }
+}
+props {
   module: "android.sysprop.TelephonyProperties"
   prop {
     api_name: "call_ring_delay"
