@@ -46,3 +46,18 @@ prop {
     access: Readonly
     prop_name: "ro.virtual_ab.retrofit",
 }
+
+# The VBMeta digest is a digest over all VBMeta structs, usually a SHA256
+# digest. Details in
+# https://android.googlesource.com/platform/external/avb/+/master/README.md#The-VBMeta-Digest
+#
+# Update_engine sets the vbmeta digest for the inactive slot, after installing
+# ota updates to the b partition of a/b devices.
+prop {
+    api_name: "other_vbmeta_digest"
+    type: String
+    scope: Internal
+    access: ReadWrite
+    prop_name: "ota.other.vbmeta_digest",
+}
+
