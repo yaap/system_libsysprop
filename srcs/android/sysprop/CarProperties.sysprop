@@ -59,3 +59,12 @@ prop {
     access: ReadWrite
     prop_name: "android.car.user_hal_timeout"
 }
+
+# Timeout (in ms) waiting for Device Policy Manager responses for user management requests.
+prop {
+    api_name: "device_policy_manager_timeout"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    prop_name: "android.car.device_policy_manager_timeout"
+}
