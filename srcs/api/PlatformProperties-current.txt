@@ -28,6 +28,10 @@ props {
 props {
   module: "android.sysprop.NetworkProperties"
   prop {
+    api_name: "isCellular464XlatEnabled"
+    prop_name: "net.464xlat.cellular.enabled"
+  }
+  prop {
     api_name: "tcp_init_rwnd"
     type: Integer
     access: ReadWrite

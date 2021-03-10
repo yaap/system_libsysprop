@@ -22,3 +22,11 @@ prop {
     access: ReadWrite
     prop_name: "net.tcp_def_init_rwnd"
 }
+
+prop {
+    api_name: "isCellular464XlatEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "net.464xlat.cellular.enabled"
+}
