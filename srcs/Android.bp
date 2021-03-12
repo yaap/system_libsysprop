@@ -28,4 +28,7 @@ sysprop_library {
         "com.android.art",
         "com.android.art.debug",
     ],
+    cpp: {
+        min_sdk_version: "S",
+    },
 }
