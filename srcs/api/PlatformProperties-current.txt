@@ -8,6 +8,15 @@ props {
   }
 }
 props {
+  owner: Odm
+  module: "android.sysprop.DeviceProperties"
+  prop {
+    api_name: "media_performance_class"
+    type: Integer
+    prop_name: "ro.odm.build.media_performance_class"
+  }
+}
+props {
   module: "android.sysprop.MediaProperties"
   prop {
     api_name: "swcodec_ion_align"
