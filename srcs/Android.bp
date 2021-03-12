@@ -29,4 +29,7 @@ sysprop_library {
         "com.android.art.debug",
         "com.android.tethering",
     ],
+    cpp: {
+        min_sdk_version: "S",
+    },
 }
