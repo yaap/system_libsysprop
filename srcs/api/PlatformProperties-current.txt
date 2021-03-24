@@ -19,6 +19,11 @@ props {
 props {
   module: "android.sysprop.MediaProperties"
   prop {
+    api_name: "codec2_dmabuf_padding"
+    type: Integer
+    prop_name: "media.c2.dmabuf.padding"
+  }
+  prop {
     api_name: "swcodec_ion_align"
     type: Integer
     prop_name: "ro.com.android.media.swcodec.ion.align"
