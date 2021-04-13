@@ -43,7 +43,7 @@ prop {
     type: Boolean
     scope: Internal
     access: Readonly
-    prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
+    prop_name: "ro.hdmi.set_menu_language"
 }
 
 # When ARC is initiated, this port will be used to turn on ARC.
@@ -52,7 +52,7 @@ prop {
     type: String
     scope: Internal
     access: Readonly
-    prop_name: "ro.hdmi.cec.audio.arc_port.config"
+    prop_name: "ro.hdmi.property_sytem_audio_device_arc_port"
 }
 
 # True means CEC audio device should forward volume keys when system audio mode is off.
@@ -62,7 +62,7 @@ prop {
     type: Boolean
     scope: Internal
     access: Readonly
-    prop_name: "ro.hdmi.cec.audio.forward_volume_keys_when_system_audio_mode_off.enabled"
+    prop_name: "ro.hdmi.cec_audio_device_forward_volume_keys_system_audio_mode_off"
 }
 
 # True means the current device is a cec switch device.
@@ -72,7 +72,7 @@ prop {
     type: Boolean
     scope: Internal
     access: Readonly
-    prop_name: "ro.hdmi.cec.source.is_switch.enabled."
+    prop_name: "ro.hdmi.property_is_device_hdmi_cec_switch"
 }
 
 # Determines playback device action upon receiving routing control messages.
