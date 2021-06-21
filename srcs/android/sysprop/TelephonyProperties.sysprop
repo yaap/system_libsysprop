@@ -468,3 +468,15 @@ prop {
     access: Readonly
     prop_name: "ro.telephony.sim_slots.count"
 }
+
+#
+# System property which is used to store multi sim voice capability.
+# Possible values {@link TelephonyManager#MultiSimVoiceCapability}.
+#
+prop {
+    api_name: "multi_sim_voice_capability"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    prop_name: "ril.multisim.voice_capability"
+}
