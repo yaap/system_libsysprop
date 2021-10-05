@@ -24,6 +24,11 @@ props {
     prop_name: "media.c2.dmabuf.padding"
   }
   prop {
+    api_name: "resolution_limit_32bit"
+    type: Integer
+    prop_name: "media.resolution.limit.32bit"
+  }
+  prop {
     api_name: "swcodec_ion_align"
     type: Integer
     prop_name: "ro.com.android.media.swcodec.ion.align"
