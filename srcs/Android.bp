@@ -32,4 +32,5 @@ sysprop_library {
     cpp: {
         min_sdk_version: "S",
     },
+    vendor_available: true,
 }

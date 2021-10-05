@@ -17,6 +17,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.HypervisorProperties"
+  prop {
+    api_name: "hypervisor_version"
+    type: String
+    prop_name: "ro.boot.hypervisor.version"
+  }
+}
+props {
   module: "android.sysprop.MediaProperties"
   prop {
     api_name: "codec2_dmabuf_padding"
