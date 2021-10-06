@@ -46,12 +46,6 @@ props {
     prop_name: "ro.android.car.trusteddevice.device_name_prefix"
   }
   prop {
-    api_name: "user_hal_enabled"
-    access: ReadWrite
-    scope: Internal
-    prop_name: "android.car.user_hal_enabled"
-  }
-  prop {
     api_name: "user_hal_timeout"
     type: Integer
     access: ReadWrite
@@ -138,6 +132,12 @@ props {
 props {
   module: "android.sysprop.HdmiProperties"
   prop {
+    api_name: "arc_port"
+    type: String
+    scope: Internal
+    prop_name: "ro.hdmi.cec.audio.arc_port.config"
+  }
+  prop {
     api_name: "cec_device_types"
     type: EnumList
     scope: Internal
@@ -152,9 +152,45 @@ props {
     deprecated: true
   }
   prop {
-    api_name: "set_menu_language"
+    api_name: "forward_volume_keys_when_system_audio_mode_off"
     scope: Internal
-    prop_name: "ro.hdmi.set_menu_language"
+    prop_name: "ro.hdmi.cec.audio.forward_volume_keys_when_system_audio_mode_off.enabled"
+  }
+  prop {
+    api_name: "is_switch"
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.is_switch.enabled."
+  }
+  prop {
+    api_name: "playback_device_action_on_routing_control"
+    type: Enum
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.playback_device_action_on_routing_control"
+    enum_values: "none|wake_up_only|wake_up_and_send_active_source"
+  }
+  prop {
+    api_name: "power_state_change_on_active_source_lost"
+    type: Enum
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.power_state_change_on_active_source_lost"
+    enum_values: "none|standby_now"
+  }
+  prop {
+    api_name: "send_standby_on_sleep"
+    type: Enum
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.send_standby_on_sleep"
+    enum_values: "to_tv|broadcast|none"
+  }
+  prop {
+    api_name: "set_menu_language_enabled"
+    scope: Internal
+    prop_name: "ro.hdmi.cec.source.set_menu_language.enabled"
+  }
+  prop {
+    api_name: "system_audio_mode_muting"
+    scope: Internal
+    prop_name: "ro.hdmi.cec.audio.system_audio_mode_muting.enabled"
   }
 }
 props {
@@ -191,6 +227,12 @@ props {
 }
 props {
   module: "android.sysprop.PowerProperties"
+  prop {
+    api_name: "battery_input_suspended"
+    access: ReadWrite
+    scope: Internal
+    prop_name: "power.battery_input.suspended"
+  }
   prop {
     api_name: "fixed_performance_scale_factor"
     type: Integer
