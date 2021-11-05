@@ -480,3 +480,12 @@ prop {
     access: ReadWrite
     prop_name: "ril.multisim.voice_capability"
 }
+
+# Indicate if phone is in emergency SMS callback mode
+prop {
+    api_name: "in_scbm"
+    type: Boolean
+    scope: Internal
+    access: ReadWrite
+    prop_name: "ril.inscbm"
+}
