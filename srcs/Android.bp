@@ -27,6 +27,7 @@ sysprop_library {
         "//apex_available:platform",
         "com.android.art",
         "com.android.art.debug",
+        "com.android.bluetooth",
         "com.android.tethering",
     ],
     cpp: {
