@@ -10,23 +10,28 @@ props {
 props {
   module: "android.sysprop.BluetoothProperties"
   prop {
-    api_name: "factory_reset"
-    access: ReadWrite
-    prop_name: "persist.bluetooth.factoryreset"
+    api_name: "audioStreamingForHearingAidSupported"
+    prop_name: "bluetooth.profile.asha.central"
   }
   prop {
-    api_name: "snoop_default_mode"
-    type: Enum
-    access: ReadWrite
-    prop_name: "persist.bluetooth.btsnoopdefaultmode"
-    enum_values: "empty|disabled|filtered|full"
+    api_name: "getHardwareIdleCurrentMa"
+    type: Integer
+    prop_name: "bluetooth.hardware.power.idle_cur_ma"
   }
   prop {
-    api_name: "snoop_log_mode"
-    type: Enum
-    access: ReadWrite
-    prop_name: "persist.bluetooth.btsnooplogmode"
-    enum_values: "empty|disabled|filtered|full"
+    api_name: "getHardwareOperatingVoltageMv"
+    type: Integer
+    prop_name: "bluetooth.hardware.power.operating_voltage_mv"
+  }
+  prop {
+    api_name: "getHardwareRxCurrentMa"
+    type: Integer
+    prop_name: "bluetooth.hardware.power.rx_cur_ma"
+  }
+  prop {
+    api_name: "getHardwareTxCurrentMa"
+    type: Integer
+    prop_name: "bluetooth.hardware.power.tx_cur_ma"
   }
 }
 props {
