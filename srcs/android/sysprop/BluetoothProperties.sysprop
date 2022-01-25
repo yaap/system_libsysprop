@@ -18,7 +18,7 @@ owner: Platform
 prop {
     api_name: "snoop_default_mode"
     type: Enum
-    scope: Public
+    scope: Internal
     access: ReadWrite
     enum_values: "empty|disabled|filtered|full"
     prop_name: "persist.bluetooth.btsnoopdefaultmode"
@@ -27,7 +27,7 @@ prop {
 prop {
     api_name: "snoop_log_mode"
     type: Enum
-    scope: Public
+    scope: Internal
     access: ReadWrite
     enum_values: "empty|disabled|filtered|full"
     prop_name: "persist.bluetooth.btsnooplogmode"
@@ -36,7 +36,59 @@ prop {
 prop {
     api_name: "factory_reset"
     type: Boolean
-    scope: Public
+    scope: Internal
     access: ReadWrite
     prop_name: "persist.bluetooth.factoryreset"
+}
+
+######## Bluetooth configurations
+
+# Bluetooth operating voltage in millivolts available for vendors overlay.
+# Used to calculate Bluetooth power consumption for a specific hardware.
+prop {
+    api_name: "getHardwareOperatingVoltageMv"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.hardware.power.operating_voltage_mv"
+}
+
+# Bluetooth idle current in milliamps available for vendors overlay.
+# Used to calculate Bluetooth power consumption for a specific hardware.
+prop {
+    api_name: "getHardwareIdleCurrentMa"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.hardware.power.idle_cur_ma"
+}
+
+# Bluetooth transmit current in milliamps available for vendors overlay.
+# Used to calculate Bluetooth power consumption for a specific hardware.
+prop {
+    api_name: "getHardwareTxCurrentMa"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.hardware.power.tx_cur_ma"
+}
+
+# Bluetooth receive current in milliamps available for vendors overlay.
+# Used to calculate Bluetooth power consumption for a specific hardware.
+prop {
+    api_name: "getHardwareRxCurrentMa"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.hardware.power.rx_cur_ma"
+}
+
+# Whether or not Hearing Aid Audio Support Using Bluetooth LE is supported on this device.
+# Set by vendors overlay, read at Bluetooth initialization.
+prop {
+    api_name: "audioStreamingForHearingAidSupported"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.profile.asha.central"
 }
