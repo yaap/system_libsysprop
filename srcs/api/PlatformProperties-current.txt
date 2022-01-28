@@ -45,6 +45,10 @@ props {
     prop_name: "bluetooth.hardware.power.tx_cur_ma"
   }
   prop {
+    api_name: "isAdapterAddressValidationEnabled"
+    prop_name: "bluetooth.framework.adapter_address_validation"
+  }
+  prop {
     api_name: "isProfileA2dpSinkEnabled"
     prop_name: "bluetooth.profile.a2dp.sink.enabled"
   }
@@ -151,6 +155,10 @@ props {
   prop {
     api_name: "isProfileVcServerEnabled"
     prop_name: "bluetooth.profile.vc.server.enabled"
+  }
+  prop {
+    api_name: "isSupportPersistedStateEnabled"
+    prop_name: "bluetooth.framework.support_persisted_state"
   }
   prop {
     api_name: "snoop_default_mode"
