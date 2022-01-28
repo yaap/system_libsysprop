@@ -103,6 +103,26 @@ prop {
     prop_name: "bluetooth.hardware.power.rx_cur_ma"
 }
 
+# Whether Bluetooth should keep its state after reboot.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isSupportPersistedStateEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.framework.support_persisted_state"
+}
+
+# Whether Bluetooth should keep its state after reboot.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isAdapterAddressValidationEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.framework.adapter_address_validation"
+}
+
 # Whether the Advanced Audio Distribution Profile (A2DP) Sink role is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
