@@ -10,6 +10,11 @@ props {
 props {
   module: "android.sysprop.BluetoothProperties"
   prop {
+    api_name: "factory_reset"
+    access: ReadWrite
+    prop_name: "persist.bluetooth.factoryreset"
+  }
+  prop {
     api_name: "getClassOfDevice"
     type: UIntList
     prop_name: "bluetooth.device.class_of_device"
@@ -146,6 +151,20 @@ props {
   prop {
     api_name: "isProfileVcServerEnabled"
     prop_name: "bluetooth.profile.vc.server.enabled"
+  }
+  prop {
+    api_name: "snoop_default_mode"
+    type: Enum
+    access: ReadWrite
+    prop_name: "persist.bluetooth.btsnoopdefaultmode"
+    enum_values: "empty|disabled|filtered|full"
+  }
+  prop {
+    api_name: "snoop_log_mode"
+    type: Enum
+    access: ReadWrite
+    prop_name: "persist.bluetooth.btsnooplogmode"
+    enum_values: "empty|disabled|filtered|full"
   }
 }
 props {

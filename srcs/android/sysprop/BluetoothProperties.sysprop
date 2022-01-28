@@ -18,7 +18,7 @@ owner: Platform
 prop {
     api_name: "snoop_default_mode"
     type: Enum
-    scope: Internal
+    scope: Public
     access: ReadWrite
     enum_values: "empty|disabled|filtered|full"
     prop_name: "persist.bluetooth.btsnoopdefaultmode"
@@ -27,7 +27,7 @@ prop {
 prop {
     api_name: "snoop_log_mode"
     type: Enum
-    scope: Internal
+    scope: Public
     access: ReadWrite
     enum_values: "empty|disabled|filtered|full"
     prop_name: "persist.bluetooth.btsnooplogmode"
@@ -36,7 +36,7 @@ prop {
 prop {
     api_name: "factory_reset"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "persist.bluetooth.factoryreset"
 }
