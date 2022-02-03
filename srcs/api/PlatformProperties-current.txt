@@ -187,9 +187,17 @@ props {
 props {
   module: "android.sysprop.HypervisorProperties"
   prop {
+    api_name: "hypervisor_protected_vm_supported"
+    prop_name: "ro.boot.hypervisor.protected_vm.supported"
+  }
+  prop {
     api_name: "hypervisor_version"
     type: String
     prop_name: "ro.boot.hypervisor.version"
+  }
+  prop {
+    api_name: "hypervisor_vm_supported"
+    prop_name: "ro.boot.hypervisor.vm.supported"
   }
 }
 props {
