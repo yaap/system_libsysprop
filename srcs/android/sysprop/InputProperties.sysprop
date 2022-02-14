@@ -23,3 +23,13 @@ prop {
     access: ReadWrite
     prop_name: "persist.input.velocitytracker.strategy"
 }
+
+# A debug flag that converts all touch pointers to stylus pointers.
+# Requires a reboot to take effect.
+prop {
+    api_name: "simulate_stylus_with_touch"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "persist.debug.input.simulate_stylus_with_touch"
+}
