@@ -81,6 +81,10 @@ props {
     prop_name: "bluetooth.profile.bap.unicast.server.enabled"
   }
   prop {
+    api_name: "isProfileBasClientEnabled"
+    prop_name: "bluetooth.profile.bas.client.enabled"
+  }
+  prop {
     api_name: "isProfileBassClientEnabled"
     prop_name: "bluetooth.profile.bass.client.enabled"
   }
