@@ -49,6 +49,10 @@ props {
     prop_name: "bluetooth.framework.adapter_address_validation"
   }
   prop {
+    api_name: "isGapLePrivacyEnabled"
+    prop_name: "bluetooth.core.gap.le.privacy.enabled"
+  }
+  prop {
     api_name: "isProfileA2dpSinkEnabled"
     prop_name: "bluetooth.profile.a2dp.sink.enabled"
   }

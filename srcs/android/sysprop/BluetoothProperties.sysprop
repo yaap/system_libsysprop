@@ -43,6 +43,16 @@ prop {
 
 ######## Bluetooth configurations
 
+# Whether GAP BLE Privacy (RPA) is enabled on this device.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isGapLePrivacyEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.gap.le.privacy.enabled"
+}
+
 # The default name of the device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
