@@ -81,8 +81,8 @@ props {
     prop_name: "bluetooth.profile.bap.broadcast.source.enabled"
   }
   prop {
-    api_name: "isProfileBapUnicastServerEnabled"
-    prop_name: "bluetooth.profile.bap.unicast.server.enabled"
+    api_name: "isProfileBapUnicastClientEnabled"
+    prop_name: "bluetooth.profile.bap.unicast.client.enabled"
   }
   prop {
     api_name: "isProfileBasClientEnabled"
@@ -91,6 +91,10 @@ props {
   prop {
     api_name: "isProfileBassClientEnabled"
     prop_name: "bluetooth.profile.bass.client.enabled"
+  }
+  prop {
+    api_name: "isProfileCcpServerEnabled"
+    prop_name: "bluetooth.profile.ccp.server.enabled"
   }
   prop {
     api_name: "isProfileCsipSetCoordinatorEnabled"
@@ -157,12 +161,8 @@ props {
     prop_name: "bluetooth.profile.sap.server.enabled"
   }
   prop {
-    api_name: "isProfileTbsServerEnabled"
-    prop_name: "bluetooth.profile.tbs.server.enabled"
-  }
-  prop {
-    api_name: "isProfileVcServerEnabled"
-    prop_name: "bluetooth.profile.vc.server.enabled"
+    api_name: "isProfileVcpControllerEnabled"
+    prop_name: "bluetooth.profile.vcp.controller.enabled"
   }
   prop {
     api_name: "isSupportPersistedStateEnabled"
