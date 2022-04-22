@@ -203,14 +203,14 @@ prop {
     prop_name: "bluetooth.profile.bap.broadcast.source.enabled"
 }
 
-# Whether the Basic Audio Profile (BAP) unicast server role is enabled on this device.
+# Whether the Basic Audio Profile (BAP) unicast client role is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
-    api_name: "isProfileBapUnicastServerEnabled"
+    api_name: "isProfileBapUnicastClientEnabled"
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "bluetooth.profile.bap.unicast.server.enabled"
+    prop_name: "bluetooth.profile.bap.unicast.client.enabled"
 }
 
 # Whether the Battery Service profile (BAS) client role is enabled on this device.
@@ -393,22 +393,22 @@ prop {
     prop_name: "bluetooth.profile.sap.server.enabled"
 }
 
-# Whether the Telephone Bearer Service (TBS) server role is enabled on this device.
+# Whether the Call Control Profile (CCP) server role is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
-    api_name: "isProfileTbsServerEnabled"
+    api_name: "isProfileCcpServerEnabled"
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "bluetooth.profile.tbs.server.enabled"
+    prop_name: "bluetooth.profile.ccp.server.enabled"
 }
 
-# Whether the Volume Control Profile (VCP) server role is enabled on this device.
+# Whether the Volume Control Profile (VCP) controller role is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
-    api_name: "isProfileVcServerEnabled"
+    api_name: "isProfileVcpControllerEnabled"
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "bluetooth.profile.vc.server.enabled"
+    prop_name: "bluetooth.profile.vcp.controller.enabled"
 }
