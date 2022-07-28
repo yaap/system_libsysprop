@@ -242,6 +242,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.MemoryProperties"
+  prop {
+    api_name: "memory_ddr_size"
+    type: String
+    prop_name: "ro.boot.ddr_size"
+  }
+}
+props {
   module: "android.sysprop.NetworkProperties"
   prop {
     api_name: "isCellular464XlatEnabled"
