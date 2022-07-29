@@ -53,6 +53,16 @@ prop {
     prop_name: "bluetooth.core.gap.le.privacy.enabled"
 }
 
+# Minimum limit for GAP LE connection update time.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "getGapLeConnMinLimit"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.gap.le.conn.min.limit"
+}
+
 # The default name of the device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
