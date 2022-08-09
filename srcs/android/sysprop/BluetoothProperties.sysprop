@@ -490,3 +490,125 @@ prop {
     access: Readonly
     prop_name: "bluetooth.core.classic.page_timeout"
 }
+
+# BR/EDR Sniff Parameters
+# Please refer to BTA_DM_PM_PARK_IDX in bta_api.h to determine how many
+# entries are currently being supported.
+# The SNIFF table entries must be in the order from highest latency (biggest
+# interval) to lowest latency. If there's a conflict among the connected
+# services, the setting with lowest latency wins.
+prop {
+    api_name: "getClassicSniffMaxIntervals"
+    type: UIntList
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.classic.sniff_max_intervals"
+}
+prop {
+    api_name: "getClassicSniffMinIntervals"
+    type: UIntList
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.classic.sniff_min_intervals"
+}
+prop {
+    api_name: "getClassicSniffAttempts"
+    type: UIntList
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.classic.sniff_attempts"
+}
+prop {
+    api_name: "getClassicSniffTimeouts"
+    type: UIntList
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.classic.sniff_timeouts"
+}
+
+# The following values are used to load default adapter parameters for LE.
+# The Bluetooth Core Specification should be consulted for the meaning and valid
+# domain of each of these values.
+
+# LE connection parameters.
+prop {
+    api_name: "getLeMinConnectionInterval"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.min_connection_interval"
+}
+prop {
+    api_name: "getLeMaxConnectionInterval"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.max_connection_interval"
+}
+prop {
+    api_name: "getLeConnectionLatency"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_latency"
+}
+prop {
+    api_name: "getLeConnectionSupervisionTimeout"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_supervision_timeout"
+}
+
+# Direct connection timeout in ms
+prop {
+    api_name: "getLeDirectConnectionTimeout"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.direct_connection_timeout"
+}
+
+# LE connection scan interval/window
+prop {
+    api_name: "getLeConnectionScanIntervalFast"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_scan_interval_fast"
+}
+prop {
+    api_name: "getLeConnectionScanWindowFast"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_scan_window_fast"
+}
+prop {
+    api_name: "getLeConnectionScanWindow2mFast"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_scan_window_2m_fast"
+}
+prop {
+    api_name: "getLeConnectionScanWindowCodedFast"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_scan_window_coded_fast"
+}
+prop {
+    api_name: "getLeConnectionScanIntervalSlow"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_scan_interval_slow"
+}
+prop {
+    api_name: "getLeConnectionScanWindowSlow"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.connection_scan_window_slow"
+}
