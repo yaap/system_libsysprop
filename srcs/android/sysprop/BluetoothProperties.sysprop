@@ -97,6 +97,14 @@ prop {
     prop_name: "persist.bluetooth.factoryreset"
 }
 
+prop {
+    api_name: "le_audio_allow_list"
+    type: StringList
+    scope: Public
+    access: ReadWrite
+    prop_name: "persist.bluetooth.leaudio.allow_list"
+}
+
 ######## Bluetooth configurations
 
 # Whether GAP BLE Privacy (RPA) is enabled on this device.

@@ -188,6 +188,12 @@ props {
     prop_name: "bluetooth.framework.support_persisted_state"
   }
   prop {
+    api_name: "le_audio_allow_list"
+    type: StringList
+    access: ReadWrite
+    prop_name: "persist.bluetooth.leaudio.allow_list"
+  }
+  prop {
     api_name: "snoop_default_mode"
     type: Enum
     access: ReadWrite
