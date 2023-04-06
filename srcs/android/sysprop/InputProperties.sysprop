@@ -73,3 +73,11 @@ prop {
     prop_name: "persist.input.keyboard.backlight_animation.enabled"
 }
 
+# A flag to start logging atoms relating into input device usage metrics. Requires restart.
+prop {
+    api_name: "enable_input_device_usage_metrics"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "persist.debug.input.enable_input_device_usage_metrics"
+}
