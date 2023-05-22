@@ -81,3 +81,13 @@ prop {
     access: Readonly
     prop_name: "persist.debug.input.enable_input_device_usage_metrics"
 }
+
+# A flag to enable the Custom levels provided via IDC files for Keyboard backlight
+# introduced in Android U-QPR1.
+prop {
+    api_name: "enable_keyboard_backlight_custom_levels"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "persist.input.keyboard.backlight_custom_levels.enabled"
+}
