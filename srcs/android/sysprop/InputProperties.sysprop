@@ -91,3 +91,13 @@ prop {
     access: Readonly
     prop_name: "persist.input.keyboard.backlight_custom_levels.enabled"
 }
+
+
+# A flag to enable ALS based keyboard backlight control introduced in Android U-QPR1.
+prop {
+    api_name: "enable_ambient_keyboard_backlight_control"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "persist.input.keyboard.ambient_backlight_control.enabled"
+}
